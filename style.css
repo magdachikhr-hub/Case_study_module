@@ -65,4 +65,16 @@ main div.container h2 {
     width: 498px;
     height: 280px;
   }
+  main div.container h2 {
+    font-size: 20px;
+  }
+  main div.container p {
+    font-size: 20px;
+    letter-spacing: -4%;
+    margin: 16px 0 32px;
+  }
+  main div.container button {
+    width: 150px;
+    height: 38px;
+  }
 }/*# sourceMappingURL=style.css.map */
