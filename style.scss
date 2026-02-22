@@ -4,25 +4,34 @@
 
 $background_color: #1e1e1e;
 $card_background_color: #f6f8fb;
+$black: #000000;
+$white: #ffffff;
+$button_font_family: "Geist Mono", monospace;
+$paragraph_font_family: "Source Serif 4", serif;
+$font_family: "Radio Canada Big", sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Radio Canada Big", sans-serif;
+  font-family: $font_family;
 }
 
 main {
   height: 100vh;
   background-color: $background_color;
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: center;
   div.container {
     width: 335px;
     height: 454px;
     background-color: $card_background_color;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
     padding: 20px;
     border-radius: 16px;
@@ -32,26 +41,27 @@ main {
       height: 166px;
     }
     p {
-      font-family: "Source Serif 4", serif;
+      font-family: $paragraph_font_family;
       font-weight: 400;
       font-size: 18px;
       letter-spacing: -3%;
       line-height: 120%;
-      color: #000000;
+      color: $black;
       margin: 12px 0 24px;
     }
     button {
-      font-family: "Geist Mono", monospace;
-      color: #ffffff;
-      background-color: #000000;
+      font-family: $button_font_family;
+      color: $white;
+      background-color: $black;
       width: 295px;
       height: 38px;
       font-size: 14px;
       font-weight: 500;
+      border: none;
     }
     h2 {
       font-size: 18px;
-      color: #000000;
+      color: $black;
       letter-spacing: -2%;
       font-weight: 500;
     }

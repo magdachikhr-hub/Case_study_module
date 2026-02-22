@@ -47,6 +47,7 @@ main div.container button {
   height: 38px;
   font-size: 14px;
   font-weight: 500;
+  border: none;
 }
 main div.container h2 {
   font-size: 18px;
